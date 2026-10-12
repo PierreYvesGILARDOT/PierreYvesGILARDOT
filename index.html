@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prénom Nom – Élève ingénieur automobile</title>
+<meta name="description" content="Portfolio de Prénom Nom, élève ingénieur ESTACA en recherche de stage à partir de mars 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F1F4F6;--ink:#101C26;--muted:#51606C;--line:#CBD5DC;--accent:#0A5CFF;--card:#FFFFFF}
+@media (prefers-color-scheme:dark){:root{--bg:#0E161D;--ink:#EAF0F4;--muted:#9AABB8;--line:#26353F;--accent:#6FA2FF;--card:#142029}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;gap:1.5rem;justify-content:flex-end;padding:1.2rem 0;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{position:relative;padding:3rem 0 5rem;overflow:hidden}
+.hero svg{position:absolute;right:-5%;top:0;width:70%;height:100%;z-index:0;opacity:.55}
+.hero svg path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:1200;stroke-dashoffset:1200;animation:flow 2.6s ease-out forwards}
+.hero svg path:nth-child(2){animation-delay:.2s}.hero svg path:nth-child(3){animation-delay:.4s}
+.hero svg path:nth-child(4){animation-delay:.6s}.hero svg path:nth-child(5){animation-delay:.8s}
+@keyframes flow{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.hero svg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+.hero .in{position:relative;z-index:1;max-width:620px}
+h1{font-size:clamp(2.6rem,7vw,4.6rem);font-weight:700;letter-spacing:-.03em}
+.sub{font-size:1.25rem;color:var(--muted);margin:1rem 0 .6rem}
+.hook{margin:0 0 2rem;max-width:52ch}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn{display:inline-block;padding:.75rem 1.3rem;border-radius:6px;border:1.5px solid var(--ink);text-decoration:none;font-weight:500}
+.btn.p{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent);background:var(--accent);color:#fff}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:2rem;margin-bottom:1.8rem;letter-spacing:-.02em}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;margin-bottom:3rem}
+.proj:nth-child(even) .ph{order:2}
+.ph{aspect-ratio:4/3;border-radius:6px;background:repeating-linear-gradient(135deg,var(--card),var(--card) 12px,var(--bg) 12px,var(--bg) 24px);border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:.9rem;text-align:center;padding:1rem;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.proj h3{font-size:1.5rem;margin-bottom:.4rem}
+.meta{color:var(--accent);font-weight:500;margin:0 0 .8rem;font-size:.95rem}
+.proj ul{padding-left:1.1rem;margin:.6rem 0 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.2rem}
+.skills div{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.2rem}
+.skills h3{font-size:1.1rem;margin-bottom:.5rem}
+.skills p{margin:0;color:var(--muted)}
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.tl li{padding:0 0 1.4rem 1.4rem;position:relative}
+.tl li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl b{display:block}
+.tl span{color:var(--muted)}
+footer{padding:3rem 0;border-top:1px solid var(--line);color:var(--muted)}
+footer a{color:var(--ink);font-weight:500}
+@media (max-width:720px){.proj{grid-template-columns:1fr}.proj:nth-child(even) .ph{order:0}.hero svg{width:120%;right:-30%;opacity:.3}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Navigation"><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#parcours">Parcours</a><a href="#contact">Contact</a></nav>
+
+<header class="hero">
+<svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<path d="M0 90 C180 90 230 40 340 60 S520 120 600 100"/>
+<path d="M0 150 C180 150 250 100 340 150 S520 170 600 160"/>
+<path d="M0 210 C170 210 260 190 340 215 S520 220 600 215"/>
+<path d="M0 270 C180 270 250 310 340 280 S520 270 600 275"/>
+<path d="M0 330 C180 330 240 370 340 340 S520 320 600 335"/>
+</svg>
+<div class="in">
+<h1>Prénom Nom</h1>
+<p class="sub">Élève ingénieur automobile, ESTACA</p>
+<p class="hook">Je conçois, simule et développe des solutions techniques, de la moto électrique d'association aux outils de gestion en entreprise. Je recherche un stage à partir de fin février / début mars 2027.</p>
+<div class="btns">
+<a class="btn p" href="cv-fr.pdf">Télécharger mon CV</a>
+<a class="btn" href="cv-en.pdf">Resume (EN)</a>
+<a class="btn" href="https://www.linkedin.com/in/ton-profil">LinkedIn</a>
+</div>
+</div>
+</header>
+
+<section id="projets">
+<h2>Projets</h2>
+
+<article class="proj">
+<div class="ph"><!-- Remplace ce texte par : <img src="moto.jpg" alt="Moto électrique Mototech"> -->Photo ou rendu CAO de la moto</div>
+<div>
+<h3>Moto 100% électrique</h3>
+<p class="meta">Association Mototech</p>
+<p>Conception d'une moto entièrement électrique au sein de l'association étudiante.</p>
+<ul><li>Ton rôle : à compléter (châssis, batterie, intégration…)</li><li>Taille de l'équipe et résultat : à compléter</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div class="ph"><!-- <img src="cfd.jpg" alt="Simulation ANSYS Fluent"> -->Capture de simulation (champ de vitesse ou de pression)</div>
+<div>
+<h3>Simulation CFD</h3>
+<p class="meta">ANSYS Fluent</p>
+<p>Étude aérodynamique par simulation numérique.</p>
+<ul><li>Objet étudié et objectif : à compléter</li><li>Résultat principal : à compléter</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div class="ph"><!-- <img src="appli.jpg" alt="Application de gestion"> -->Capture d'écran anonymisée de l'application</div>
+<div>
+<h3>Application de gestion logistique</h3>
+<p class="meta">Stage chez Smartech PLV (RC Group), mai – août 2026</p>
+<p>Application Excel VBA qui regroupe la gestion des stocks, des commandes clients et leur suivi, complétée par des tableaux de suivi interactifs entre services.</p>
+<ul><li>Utilisateurs et gain de temps : à compléter</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div class="ph"><!-- <img src="npu.jpg" alt="Semestre à NPU"> -->Photo du semestre à Xi'an</div>
+<div>
+<h3>Semestre à Northwestern Polytechnical University</h3>
+<p class="meta">Xi'an, Chine, sept. 2026 – févr. 2027</p>
+<p>Aérodynamique, essais en soufflerie et matériaux composites pour l'aéronautique.</p>
+<ul><li>Projet ou TP marquant : à compléter</li></ul>
+</div>
+</article>
+</section>
+
+<section id="competences">
+<h2>Compétences</h2>
+<div class="skills">
+<div><h3>Conception et simulation</h3><p>SolidWorks, 3DEXPERIENCE, ANSYS Fluent (CFD)</p></div>
+<div><h3>Programmation et données</h3><p>Python, C, C++, MATLAB / Simulink, Excel VBA</p></div>
+<div><h3>Savoir-être</h3><p>Gestion de projet, coordination d'équipe, autonomie, adaptabilité</p></div>
+<div><h3>Langues</h3><p>Anglais (TOEIC 920), allemand (A2), mandarin (débutant)</p></div>
+</div>
+</section>
+
+<section id="parcours">
+<h2>Parcours</h2>
+<ul class="tl">
+<li><b>Semestre d'échange, NPU Xi'an</b><span>Sept. 2026 – févr. 2027</span></li>
+<li><b>Stage assistant ingénieur, Smartech PLV (RC Group)</b><span>Mai – août 2026</span></li>
+<li><b>Stage international, Ystad Holiday Houses (Suède)</b><span>Juin – juil. 2025</span></li>
+<li><b>Stage chez Neubauer (Jaguar Land Rover)</b><span>Juil. 2024</span></li>
+<li><b>Stage chez Alpine, usine de Dieppe</b><span>Juil. 2023</span></li>
+<li><b>Diplôme d'ingénieur, ESTACA, Laval</b><span>2022 – 2027</span></li>
+</ul>
+</section>
+</div>
+
+<footer id="contact">
+<div class="wrap">
+<h2>Contact</h2>
+<p><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a> · <a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></p>
+</div>
+</footer>
+</body>
+</html>
