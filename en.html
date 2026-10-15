@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pierre-Yves GILARDOT – Automotive Engineering Student</title>
+<meta name="description" content="Portfolio of Pierre-Yves GILARDOT, ESTACA engineering student seeking an end-of-studies internship starting late February 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--t0:#F1F4F6;--t1:#E6EEF8;--t2:#EFEDE6;--t3:#E5F0EC;--t4:#ECE8F3;--ink:#101C26;--muted:#51606C;--line:#C3CFD8;--accent:#0A5CFF;--card:#FFF}
+@media (prefers-color-scheme:dark){:root{--t0:#0E161D;--t1:#0F1B2C;--t2:#1A1915;--t3:#0E1F1B;--t4:#171426;--ink:#EAF0F4;--muted:#9AABB8;--line:#2A3944;--accent:#6FA2FF;--card:#142029}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--t0);transition:background-color 1.1s ease;color:var(--ink);font:400 1.05rem/1.6 "Instrument Sans",system-ui,sans-serif}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+nav{display:flex;flex-wrap:wrap;gap:1.4rem;justify-content:flex-end;padding:1.2rem 0;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--accent)}
+.hero{position:relative;padding:3rem 0 5rem;overflow:hidden}
+.hero svg{position:absolute;right:-5%;top:0;width:70%;height:100%;opacity:.45}
+.hero svg path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:1200;stroke-dashoffset:1200;animation:flow 2.6s ease-out forwards}
+.hero svg path:nth-child(2){animation-delay:.2s}.hero svg path:nth-child(3){animation-delay:.4s}.hero svg path:nth-child(4){animation-delay:.6s}.hero svg path:nth-child(5){animation-delay:.8s}
+@keyframes flow{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.hero svg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}body{transition:none}}
+.hero .in{position:relative;max-width:620px}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);font-weight:700;letter-spacing:-.03em}
+.sub{font-size:1.25rem;color:var(--muted);margin:1rem 0 .6rem}
+.hook{margin:0 0 2rem;max-width:56ch}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.btn,.dl{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;border:1.5px solid var(--ink);background:none;color:var(--ink);text-decoration:none;font:500 1rem "Instrument Sans",sans-serif;cursor:pointer}
+.btn.p{background:var(--ink);color:var(--t0)}
+.btn:hover,.dl:hover{border-color:var(--accent);background:var(--accent);color:#fff}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font-size:2rem;margin-bottom:1.8rem;letter-spacing:-.02em}
+.tl{list-style:none;padding:0;margin:0;border-left:2px solid var(--line)}
+.tl>li{padding:0 0 1.4rem 1.4rem;position:relative}
+.tl>li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl summary{cursor:pointer;list-style:none}.tl summary::-webkit-details-marker{display:none}
+.tl summary b,.tl>li>b{display:block}
+.tl summary b::after{content:" +";color:var(--accent)}.tl details[open] summary b::after{content:" \2212"}
+.tl span{color:var(--muted)}
+.lg{display:block;height:34px;width:auto;margin-top:.5rem}
+.more{margin:.7rem 0 0;max-width:62ch}
+.exp{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;margin-top:1rem;align-items:start}
+.exp p{margin:0 0 .9rem}
+.meta{color:var(--accent);font-weight:500;font-size:.95rem}
+.ph{aspect-ratio:4/3;border-radius:6px;background:var(--card);border:1px solid var(--line);overflow:hidden;display:grid;place-items:center}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph img.logo{object-fit:contain;padding:2rem}
+.proj{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;margin-bottom:3rem}
+.proj:nth-child(even) .ph{order:2}
+.proj h3{font-size:1.5rem;margin-bottom:.4rem}
+.proj .meta{margin:0 0 .8rem}.proj p{margin:0}.proj ul{padding-left:1.1rem;margin:.7rem 0 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.skills div{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1.2rem}
+.skills h3{font-size:1.1rem;margin-bottom:.5rem}.skills p{margin:0;color:var(--muted)}
+footer{padding:3rem 0;border-top:1px solid var(--line);color:var(--muted)}
+footer a{color:var(--ink);font-weight:500}
+dialog{border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);padding:1.6rem 2rem;text-align:center}
+dialog::backdrop{background:rgba(10,20,30,.5)}
+dialog p{margin:0 0 1rem;font-size:1.15rem}
+@media (max-width:720px){.exp,.proj{grid-template-columns:1fr}.proj:nth-child(even) .ph{order:0}.hero svg{width:120%;right:-30%;opacity:.25}}
+.lang{display:flex;gap:.5rem;margin-right:auto}.lang a{display:flex;align-items:center;gap:.5rem;padding:.3rem .8rem;border:1.5px solid var(--line);border-radius:6px;color:var(--muted);text-decoration:none}.lang a[aria-current]{border-color:var(--accent);color:var(--ink)}.lang svg{width:24px;height:16px;border-radius:2px;display:block}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="wrap">
+<nav aria-label="Navigation"><div class="lang"><a href="index.html"><svg viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>Français</a><a href="en.html" aria-current="page"><svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0L60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0L60 30M60 0L0 30" stroke="#C8102E" stroke-width="2"/><path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/><path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>English</a></div><a href="#formation">Education</a><a href="#experiences">Experience</a><a href="#projets">Projects</a><a href="#competences">Skills</a><a href="#contact">Contact</a></nav>
+<header class="hero" data-t="0">
+<svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 90 C180 90 230 40 340 60 S520 120 600 100"/><path d="M0 150 C180 150 250 100 340 150 S520 170 600 160"/><path d="M0 210 C170 210 260 190 340 215 S520 220 600 215"/><path d="M0 270 C180 270 250 310 340 280 S520 270 600 275"/><path d="M0 330 C180 330 240 370 340 340 S520 320 600 335"/></svg>
+<div class="in">
+<h1>Pierre-Yves GILARDOT</h1>
+<p class="sub">Automotive Engineering Student, ESTACA</p>
+<p class="hook">Final-year engineering student at ESTACA, seeking an end-of-studies internship starting late February 2027. With skills in design &amp; simulation (SolidWorks, ANSYS) and in developing optimisation tools (VBA, Python), I aim to contribute to high-value technical projects.</p>
+<div class="btns"><a class="btn p" href="CV%20Pierre-Yves%20-%20EN.pdf" target="_blank" rel="noopener">Download my resume</a><a class="btn" href="CV%20Pierre-Yves%20-%20FR.pdf" target="_blank" rel="noopener">CV (FR)</a><a class="btn" href="https://www.linkedin.com/in/pierre-yves-gilardot-940504252/">LinkedIn</a></div>
+</div>
+</header>
+<section id="formation" data-t="1">
+<h2>Education</h2>
+<ul class="tl">
+<li><details><summary><b>Exchange semester, NPU Xi'an</b><span>Sept. 2026 – Feb. 2027</span><img class="lg" src="Logo_NPU.png" alt="NPU logo"></summary><p class="more">Six-month immersion at a prestigious Chinese university. Exchange semester in aerospace engineering: aerodynamics, wind tunnel testing and study of aerospace composite materials.</p></details></li>
+<li><details><summary><b>Master's-level Engineering Degree (MEng), ESTACA, Laval</b><span>2022 – 2027</span><img class="lg" src="Logo_ESTACA.png" alt="ESTACA logo"></summary><p class="more">Automotive track, programme focused on [to be completed].</p></details></li>
+<li><details><summary><b>French Baccalauréat (general) with Honours, Lycée Blanche de Castille, Le Chesnay</b><span>2022</span></summary><p class="more">Specialisations: mathematics, physics and geopolitics.</p></details></li>
+<li><b>Aeronautical Initiation Certificate (BIA), Saint-Cyr-l'École airfield</b><span>2021</span></li>
+</ul>
+</section>
+<section id="experiences" data-t="2">
+<h2>Work Experience</h2>
+<ul class="tl">
+<li><details><summary><b>Assistant Engineer, Smartech PLV (RC Group), Paris</b><span>May – Aug. 2026</span></summary><div class="exp"><div class="ph"><img src="Stage_Smartech.jpg" alt="Assistant Engineer, Smartech PLV (RC Group), Paris"></div><div><p class="meta">4th-year internship · Logistics department</p><p>I joined the logistics department of Smartech PLV (RC Group, point-of-sale advertising) to understand how it works from the inside and develop tools suited to field needs. In four months, I designed four tools: a transport order form generator, an automated dashboard for the workshops, a workforce planner, and an inventory and order management application deployed on the company's internal portal. I carried out this work autonomously, from analysing the need through to adoption by the teams.</p><button class="dl" type="button" data-soon>Download the internship report (PDF)</button></div></div></details></li><li><details><summary><b>International Internship, Ystad Holiday Houses, Sweden</b><span>June – July 2025</span></summary><div class="exp"><div class="ph"><img src="Stage_Ystad.jpg" alt="International Internship, Ystad Holiday Houses, Sweden"></div><div><p class="meta">1st-year internship of the engineering cycle · Hotel-restaurant</p><p>Two-month internship in a hotel-restaurant in Sweden, within a multi-skilled team. I carried out mechanical maintenance and upkeep of the facilities, while helping with food service and guest reception. A first international experience that taught me to adapt quickly to varied tasks and to work autonomously, in English.</p></div></div></details></li><li><details><summary><b>Internship at Neubauer (Jaguar Land Rover), Saint-Germain-en-Laye</b><span>July 2024</span></summary><div class="exp"><div class="ph"><img src="Stage_Neubauer.jpg" alt="Internship at Neubauer (Jaguar Land Rover), Saint-Germain-en-Laye"></div><div><p class="meta">Entry-level internship, 2nd year of the preparatory cycle</p><p>I spent one month at a Jaguar Land Rover dealership, split between the workshop and the sales department. On the technical side, I took part in mechanical maintenance, diagnostics and functional checks, in line with the manufacturer's quality standards. On the sales side, I discovered how customers are supported through the purchase of new vehicles.</p><a class="dl" href="Rapport%20de%20stage%20-%20Neubauer.pdf" target="_blank" rel="noopener">Read the internship report (PDF, in French)</a></div></div></details></li><li><details><summary><b>Internship at Alpine, Dieppe</b><span>July 2023</span></summary><div class="exp"><div class="ph"><img class="logo" src="Logo_Alpine.jpg" alt="Internship at Alpine, Dieppe"></div><div><p class="meta">Entry-level internship, 1st year of the preparatory cycle</p><p>My first internship took me to the heart of the Alpine factory in Dieppe, on the A110 production line. I carried out quality checks on vehicles and assisted operators at the assembly stations, contributing to the reliability of the manufacturing process.</p><a class="dl" href="Rapport%20de%20stage%20-%20Alpine.pdf" target="_blank" rel="noopener">Read the internship report (PDF, in French)</a></div></div></details></li></ul>
+</section>
+<section id="projets" data-t="3">
+<h2>Projects and Extracurricular Activities</h2>
+<article class="proj"><div class="ph"><img src="Projet_Mototech.jpg" alt="AMIE-E Project"></div><div><h3>AMIE-E Project</h3><p class="meta">Mototech Association, ESTACA</p><p>Turning a production electric motorcycle, a Zero SR, into a competition machine for the French "Montée Impossible" (extreme hill climb) championship. The project adapts the motorcycle to this discipline by redesigning its chassis so that it withstands the demands of a tough race.</p><ul><li>Mechanical design as a team: lengthened swingarm, custom-made</li><li>Selection of a Duke 990 frame to house all the components of the electric motorcycle</li><li>Modelling and simulation in 3DEXPERIENCE to check the frame's resistance to loads</li></ul></div></article><article class="proj"><div class="ph"><img src="Projet_Lider.jpg" alt="Trailer Design"></div><div><h3>Trailer Design</h3><p class="meta">Company: Lider</p><p>Study of an existing trailer to propose technical improvements and new design solutions, as part of a team of engineering students.</p><ul><li>Design options studied: new suspensions, integrated custom storage and a load gauge</li><li>Bending and impact tests on four materials (birch plywood, eucalyptus plywood, polyurethane, plastic honeycomb structure) to replace the plywood of the floor and side panels</li><li>Cost study carried out in parallel to check the feasibility of the proposed solutions</li></ul></div></article><article class="proj"><div class="ph"><img src="BDS.jpg" alt="ESTACA Sports Office"></div><div><h3>ESTACA Sports Office</h3><p class="meta">Head of skiing, football and the sports weekend</p><p>Within ESTACA's Sports Office, I was in charge of skiing, football and the sports weekend, an event bringing together students from all campuses around several sports.</p><ul><li>Organisation of the sports weekend: 150 students gathered over 2 days of sports tournaments</li><li>Responsibility for skiing and football: organisation of a ski week for 150 students and management of the ESTACA football team's training sessions</li><li>Development of coordination, time and priority management, and team spirit</li></ul></div></article><article class="proj"><div class="ph"><img src="Mototech.jpg" alt="Treasurer and Project Coordinator"></div><div><h3>Treasurer and Project Coordinator</h3><p class="meta">Mototech Association</p><p>Within Mototech, a student association focused on vehicle restoration and electric mobility projects, I handled the association's finances and the coordination of its projects.</p><ul><li>Treasurer: monitoring of the association's budget and expenses</li><li>Project coordinator: organisation of the team's work and follow-up of project progress</li><li>A direct link with the AMIE-E project, which the association carried out during this period</li></ul></div></article><article class="proj"><div class="ph"><img src="Projet_Idrogen.jpg" alt="Market Study on Hydrogen in Transport"></div><div><h3>Market Study on Hydrogen in Transport</h3><p class="meta">IDROGEN Association</p><p>Market study on the uses and prospects of hydrogen in transport, carried out within the IDROGEN association.</p></div></article></section>
+<section id="competences" data-t="4">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Design and simulation</h3><p>SolidWorks, 3DEXPERIENCE, ANSYS Fluent (CFD)</p></div>
+<div><h3>Programming and data</h3><p>Python, C, C++, MATLAB / Simulink, Excel VBA</p></div>
+<div><h3>Soft skills</h3><p>Project management, team coordination, autonomy, adaptability</p></div>
+<div><h3>Languages</h3><p>English (TOEIC 920), German (A2), Mandarin (beginner)</p></div>
+</div>
+</section>
+</div>
+<footer id="contact" data-t="0"><div class="wrap"><h2>Contact</h2><p><a href="mailto:Pierre-Yves.GILARDOT@estaca.eu">Pierre-Yves.GILARDOT@estaca.eu</a> · <a href="https://www.linkedin.com/in/pierre-yves-gilardot-940504252/">LinkedIn</a></p></div></footer>
+<dialog id="soon"><p>Report currently being written</p><button class="dl" type="button" onclick="this.closest('dialog').close()">Close</button></dialog>
+<script>
+const R=document.documentElement,B=document.body;
+document.querySelectorAll('[data-soon]').forEach(b=>b.onclick=()=>document.getElementById('soon').showModal());
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)B.style.backgroundColor=getComputedStyle(R).getPropertyValue('--t'+e.target.dataset.t)}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('[data-t]').forEach(s=>io.observe(s));
+const c=document.getElementById('bg'),x=c.getContext('2d'),rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let W,H,t=0,mx=0,my=0,col;const P=Array.from({length:70},()=>[Math.random()*2-1,Math.random()*2-1,Math.random()*2-1]);
+function rs(){W=c.width=innerWidth;H=c.height=innerHeight;col=getComputedStyle(R).getPropertyValue('--accent').trim();draw()}
+addEventListener('resize',rs);matchMedia('(prefers-color-scheme:dark)').addEventListener('change',rs);
+addEventListener('pointermove',e=>{mx=e.clientX/W-.5;my=e.clientY/H-.5});
+function draw(){
+const a=scrollY*.0007+t+mx*.4,b=.35+my*.3+scrollY*.0002,ca=Math.cos(a),sa=Math.sin(a),cb=Math.cos(b),sb=Math.sin(b),s=Math.min(W,H)*.6;
+const q=P.map(p=>{const X=p[0]*ca+p[2]*sa;let Z=-p[0]*sa+p[2]*ca;const Y=p[1]*cb-Z*sb;Z=p[1]*sb+Z*cb;const k=1/(1.8-Z*.5);return[W/2+X*s*k*1.4,H/2+Y*s*k,k]});
+x.clearRect(0,0,W,H);x.strokeStyle=col;x.fillStyle=col;
+for(let i=0;i<q.length;i++){for(let j=i+1;j<q.length;j++){const d=Math.hypot(q[i][0]-q[j][0],q[i][1]-q[j][1]);if(d<s*.45){x.globalAlpha=(1-d/(s*.45))*.22;x.beginPath();x.moveTo(q[i][0],q[i][1]);x.lineTo(q[j][0],q[j][1]);x.stroke()}}
+x.globalAlpha=.35;x.beginPath();x.arc(q[i][0],q[i][1],1.6*q[i][2],0,7);x.fill()}}
+function loop(){t+=.0008;draw();requestAnimationFrame(loop)}
+rs();if(!rm)loop();else addEventListener('scroll',draw,{passive:true});
+</script>
+</body>
+</html>

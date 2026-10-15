@@ -65,12 +65,13 @@ dialog{border:1px solid var(--line);border-radius:8px;background:var(--card);col
 dialog::backdrop{background:rgba(10,20,30,.5)}
 dialog p{margin:0 0 1rem;font-size:1.15rem}
 @media (max-width:720px){.exp,.proj{grid-template-columns:1fr}.proj:nth-child(even) .ph{order:0}.hero svg{width:120%;right:-30%;opacity:.25}}
+.lang{display:flex;gap:.5rem;margin-right:auto}.lang a{display:flex;align-items:center;gap:.5rem;padding:.3rem .8rem;border:1.5px solid var(--line);border-radius:6px;color:var(--muted);text-decoration:none}.lang a[aria-current]{border-color:var(--accent);color:var(--ink)}.lang svg{width:24px;height:16px;border-radius:2px;display:block}
 </style>
 </head>
 <body>
 <canvas id="bg" aria-hidden="true"></canvas>
 <div class="wrap">
-<nav aria-label="Navigation"><a href="#formation">Formation</a><a href="#experiences">Expériences</a><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></nav>
+<nav aria-label="Navigation"><div class="lang"><a href="index.html" aria-current="page"><svg viewBox="0 0 3 2" aria-hidden="true"><rect width="1" height="2" fill="#002654"/><rect x="1" width="1" height="2" fill="#fff"/><rect x="2" width="1" height="2" fill="#ED2939"/></svg>Français</a><a href="en.html"><svg viewBox="0 0 60 30" aria-hidden="true"><rect width="60" height="30" fill="#012169"/><path d="M0 0L60 30M60 0L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0L60 30M60 0L0 30" stroke="#C8102E" stroke-width="2"/><path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/><path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>English</a></div><a href="#formation">Formation</a><a href="#experiences">Expériences</a><a href="#projets">Projets</a><a href="#competences">Compétences</a><a href="#contact">Contact</a></nav>
 
 <header class="hero" data-t="0">
 <svg viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M0 90 C180 90 230 40 340 60 S520 120 600 100"/><path d="M0 150 C180 150 250 100 340 150 S520 170 600 160"/><path d="M0 210 C170 210 260 190 340 215 S520 220 600 215"/><path d="M0 270 C180 270 250 310 340 280 S520 270 600 275"/><path d="M0 330 C180 330 240 370 340 340 S520 320 600 335"/></svg>
@@ -78,15 +79,15 @@ dialog p{margin:0 0 1rem;font-size:1.15rem}
 <h1>Pierre-Yves GILARDOT</h1>
 <p class="sub">Élève ingénieur automobile, ESTACA</p>
 <p class="hook">Élève ingénieur en dernière année à l'ESTACA, je recherche un stage de fin d'études dès fin février 2027. Fort de compétences en conception &amp; simulation (SolidWorks, ANSYS) et en développement d'outils d'optimisation (VBA, Python), je souhaite contribuer à des projets techniques à forte valeur ajoutée.</p>
-<div class="btns"><a class="btn p" href="CV%20Pierre-Yves%20-%20FR.pdf" target="_blank" rel="noopener">Télécharger mon CV</a><a class="btn" href="CV%20Pierre-Yves%20-%20EN.pdf" target="_blank" rel="noopener">Resume (EN)</a><a class="btn" href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></div>
+<div class="btns"><a class="btn p" href="CV%20Pierre-Yves%20-%20FR.pdf" target="_blank" rel="noopener">Télécharger mon CV</a><a class="btn" href="CV%20Pierre-Yves%20-%20EN.pdf" target="_blank" rel="noopener">Resume (EN)</a><a class="btn" href="https://www.linkedin.com/in/pierre-yves-gilardot-940504252/">LinkedIn</a></div>
 </div>
 </header>
 
 <section id="formation" data-t="1">
 <h2>Formation</h2>
 <ul class="tl">
-<li><details><summary><b>Semestre d'échange, NPU Xi'an</b><span>Sept. 2026 – févr. 2027</span><img class="lg" src="Logo_NPU.jpg" alt="Logo NPU"></summary><p class="more">Immersion de 6 mois au sein d'une université prestigieuse chinoise. Semestre d'échange en ingénierie aéronautique : aérodynamique, essais en soufflerie et étude de matériaux composites.</p></details></li>
-<li><details><summary><b>Diplôme d'ingénieur, ESTACA, Laval</b><span>2022 – 2027</span><img class="lg" src="Logo_ESTACA.jpg" alt="Logo ESTACA"></summary><p class="more">Filière automobile, formation axée autour de [à compléter].</p></details></li>
+<li><details><summary><b>Semestre d'échange, NPU Xi'an</b><span>Sept. 2026 – févr. 2027</span><img class="lg" src="Logo_NPU.png" alt="Logo NPU"></summary><p class="more">Immersion de 6 mois au sein d'une université prestigieuse chinoise. Semestre d'échange en ingénierie aéronautique : aérodynamique, essais en soufflerie et étude de matériaux composites.</p></details></li>
+<li><details><summary><b>Diplôme d'ingénieur, ESTACA, Laval</b><span>2022 – 2027</span><img class="lg" src="Logo_ESTACA.png" alt="Logo ESTACA"></summary><p class="more">Filière automobile, formation axée autour de [à compléter].</p></details></li>
 <li><details><summary><b>Baccalauréat général mention Bien, Lycée Blanche de Castille, Le Chesnay</b><span>2022</span></summary><p class="more">Spécialités mathématiques, physique et géopolitique.</p></details></li>
 <li><b>Brevet d'initiation à l'aéronautique (BIA), aérodrome de Saint-Cyr-l'École</b><span>2021</span></li>
 </ul>
@@ -122,7 +123,7 @@ dialog p{margin:0 0 1rem;font-size:1.15rem}
 </section>
 </div>
 
-<footer id="contact" data-t="0"><div class="wrap"><h2>Contact</h2><p><a href="mailto:ton.email@exemple.com">ton.email@exemple.com</a> · <a href="https://www.linkedin.com/in/ton-profil">LinkedIn</a></p></div></footer>
+<footer id="contact" data-t="0"><div class="wrap"><h2>Contact</h2><p><a href="mailto:Pierre-Yves.GILARDOT@estaca.eu">Pierre-Yves.GILARDOT@estaca.eu</a> · <a href="https://www.linkedin.com/in/pierre-yves-gilardot-940504252/">LinkedIn</a></p></div></footer>
 
 <dialog id="soon"><p>Rapport en cours d'écriture</p><button class="dl" type="button" onclick="this.closest('dialog').close()">Fermer</button></dialog>
 
