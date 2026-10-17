@@ -32,9 +32,9 @@ nav{position:sticky;top:0;z-index:20;background:var(--nav);backdrop-filter:blur(
 .eyebrow{display:block;color:var(--accent);font-size:.8rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;margin-bottom:1.1rem}
 .nrow{display:flex;align-items:flex-end;gap:1.4rem;flex-wrap:wrap}
 h1{font-size:clamp(2.6rem,6.2vw,5rem);font-weight:700;letter-spacing:-.05em;line-height:.98}
-.logos{display:flex;gap:.8rem;flex-wrap:wrap;margin:0 0 1.8rem}
-.logos span{padding:8px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center}
-.logos img{height:36px;width:auto;max-width:140px;display:block}
+.logos{display:flex;gap:1.6rem;flex-wrap:wrap;align-items:center;margin:0 0 1.8rem}
+.logos span{display:flex;align-items:center}
+.logos img{height:54px;width:auto;max-width:200px;display:block}
 .sub{font-size:1.3rem;color:var(--muted);margin:1.3rem 0 .8rem}
 .hook{max-width:58ch;margin-bottom:2rem}
 .btns{display:flex;flex-wrap:wrap;gap:.8rem}
@@ -85,7 +85,7 @@ button.head{cursor:pointer}
 .pc:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
 .pc:last-child:nth-child(odd) .pimg{aspect-ratio:auto;height:100%;min-height:220px}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
-.skills div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.skills div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem;transition:.25s}.skills div:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(11,31,51,.12)}
 .skills h3{font-size:1.1rem;margin-bottom:.5rem}.skills p{color:var(--muted);font-size:.95rem}
 #contact{background:#0B1F33;color:#fff}
 #contact .num{color:#8EC4E2}#contact .sh p{color:#B9C8D3}
@@ -96,7 +96,7 @@ footer{background:#071725;color:#8FA2B1;padding:1.4rem 0;font-size:.85rem}
 dialog{border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);padding:1.6rem 2rem;text-align:center}
 dialog::backdrop{background:rgba(10,20,30,.5)}
 dialog p{margin:0 0 1rem;font-size:1.15rem}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}body,.reveal,.pc,.btn{transition:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}body,.reveal,.pc,.btn,.skills div{transition:none}}
 @media (max-width:900px){.hero-g,.sh,.grid,.pc:last-child:nth-child(odd){grid-template-columns:1fr}.sh{gap:.8rem}section{padding:4rem 0}.hero{min-height:auto}.head,.head.st{grid-template-columns:1fr 34px}.head.st{grid-template-columns:1fr}.date{grid-column:1/-1}.inner.l,.inner.x{grid-template-columns:1fr}.links{width:100%}}
 
 .portrait{border-radius:22px;overflow:hidden;aspect-ratio:4/5;background:var(--t1);box-shadow:0 28px 70px rgba(11,31,51,.2)}
